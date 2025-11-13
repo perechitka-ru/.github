@@ -43,7 +43,7 @@ curl -X POST -H "Content-Type: application/json" \
     "username": "User2",
     "email": "danil.vasilkov07@gmail.com",
     "password": "Abcd1234!"
-}' https://api.perechitka.ru/v1/auth/registry
+}' https://api.perechitka.ru/v2/auth/registry
 ```
 **Ответ:** 
 ```json
