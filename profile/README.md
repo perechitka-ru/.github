@@ -38,14 +38,27 @@
 ```bash
 curl -X POST -H "Content-Type: application/json" \
 -d '{
-  "first_name": "Иван",
-  "second_name": "Иванов",
-  "username": "ivan",
-  "e-mail": "ivan@example.com",
-  "password": "password123"
+    "first_name": "John",
+    "last_name": "Doe",
+    "username": "User2",
+    "email": "danil.vasilkov07@gmail.com",
+    "password": "Abcd1234!"
 }' https://api.perechitka.ru/v1/auth/registry
 ```
-**Ответ:** `{ "message": "User registered" }`
+**Ответ:** 
+```json
+{
+    "data": {
+        "email": "danil.vasilkov07@gmail.com",
+        "first_name": "John",
+        "id": 3,
+        "is_email_verified": false,
+        "last_name": "Doe"
+    },
+    "message": "User registered successfully",
+    "success": true
+}
+```
 
 ### 2. Вход `POST /login`
 ```bash
